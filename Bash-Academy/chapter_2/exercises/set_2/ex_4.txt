@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+ls /bin/bash /bob/bash 2>errors.log
+
