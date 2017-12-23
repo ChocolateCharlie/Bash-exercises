@@ -1,0 +1,12 @@
+#!usr/bin/env bash
+
+echo "Creating an la alias for ls -la"
+alias la='ls -la'
+echo "Testing the result"
+la
+
+echo "Creating a back alias for cd \$OLDPWD"
+alias back='cd $OLDPWD'
+echo "Testing the result"
+back
+

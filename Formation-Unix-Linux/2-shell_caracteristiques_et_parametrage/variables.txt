@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+echo "VARIABLES TRAINING"
+
+echo "Declaring variables..."
+NBRE=12
+PHRASE="bonjour"
+
+echo "Printing variables..."
+echo $NBRE
+echo $PHRASE
+
+echo "Showing local variables..."
+set
+
+echo "Showing environment variables..."
+env
+
+echo "Exporting variables to environment..."
+export NBRE
+export PHRASE
+
+echo "Showing again environment variables. Our variables should now appear."
+env
+
+echo "Suppressing our variables..."
+unset NBRE
+unset PHRASE
+
+echo "Showing again environment variables. Our variables should no more appear."
+env
+
