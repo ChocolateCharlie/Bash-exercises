@@ -10,7 +10,7 @@ Quelques repertoires :
 	- /sbin		les commandes d'administration du systeme
 	- /usr/sbin	id.
 	- /etc		les fichiers de configuration du systeme
-	- /dev		les fichiers speciaux permettrant d'acceder aux peripheriques
+	- /dev		les fichiers speciaux permettant d'acceder aux peripheriques
 	- /tmp		les fichiers temporaires
 	- /home		les repertoires utilisateurs
 
