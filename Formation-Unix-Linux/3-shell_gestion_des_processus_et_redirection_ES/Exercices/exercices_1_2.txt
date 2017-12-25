@@ -1,0 +1,9 @@
+#!usr/bin/env bash
+
+exec sleep 2
+# Show all processes that belong to user
+ps fux
+# Launch a background sleep command
+sleep 600 &
+# kill [PID of the sleep command]
+

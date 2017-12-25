@@ -1,0 +1,6 @@
+#!usr/bin/env bash
+
+# Redirect stdout and stderr
+find / -size +500k > fic 2> err_fic
+echo $?
+
