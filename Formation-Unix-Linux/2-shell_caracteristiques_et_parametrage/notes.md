@@ -1,16 +1,17 @@
-# 2 - Le Shell : caracteristiques et parametrage
+# 2 - Le Shell : caractéristiques et paramétrage
 
 ## Notion de Shell
-- changer de shell : *chsh*
-- liste des shells acceptes par le systeme :	*/etc/shells*
+**chsh** permet de changer de shell
 
-## Caracteristiques generales
+La liste des shells acceptés par le système se trouve dans */etc/shells*.
 
-	- Variables locales et d'environnement :	variables.txt
-	- Alias :	alias.txt
+## Caractéristiques générales
+Pour les variables locales et d'environnement, voir *variables.txt*.
 
-## Parametrage du shell
+Pour les alias, voir *alias.txt*.
 
-	- *.bash_profile* :	variables d'environnement
-	- *.bashrc* :	alias et commandes
+## Paramétrage du shell
+
+	- *.bash_profile* : variables d'environnement
+	- *.bashrc* : alias et commandes
 
