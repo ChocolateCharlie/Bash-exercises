@@ -1,0 +1,8 @@
+#! usr/bin/env bash
+
+# Print result of ls in fic file
+ls > fic
+
+# Show the return code
+echo "Process returned : $?"
+
