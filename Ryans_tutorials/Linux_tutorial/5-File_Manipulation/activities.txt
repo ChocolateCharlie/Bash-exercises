@@ -1,0 +1,45 @@
+#! usr/bin/env bash
+
+# Create a directory
+mkdir experimentations
+
+# Create files and directories in this directory
+cd experimentations
+mkdir foo
+cd foo
+touch hello
+
+cd ..
+mkdir bar
+cd bar
+touch toto
+
+cd ..
+mkdir ting
+
+# Rename some files and directories
+cd bar
+mv toto titi
+cd ..
+mv bar dong
+
+# Delete a directory
+rm -ri dong
+
+# Move back and copy a file
+cd ..
+cp experimentations/foo/hello experimentations
+
+# Move file
+mv experimentations/hello experimentations/ting
+
+# Rename file
+mv experimentations/ting/hello experimentations/ting/bye
+
+# Move file and rename in the process
+mv experimentations/ting/bye experimentations/jelly
+
+# Look at existing directories in the home directory
+ls -la ~
+
+

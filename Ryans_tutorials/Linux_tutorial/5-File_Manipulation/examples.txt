@@ -1,0 +1,39 @@
+#! usr/bin/env bash
+
+# Make Directory
+# mkdir [options] <Directory>
+# -p make parent directories as needed
+# -v show what is happening
+mkdir -pv linuxtutorialwork/foo/bar
+
+cd linuxtutorialwork
+
+# Remove Directory
+# rmdir [options] <Directory>
+rmdir -pv foo/bar
+
+# Create a blank file
+# touch [options] <filename>
+touch example1
+
+# Copy
+# cp [options] <source> <destination>
+cp example1 barney
+cd ..
+cp -r linuxtutorialwork foo
+
+# Move
+# mv [options] <source> <destination>
+mkdir backups
+mv foo backups
+
+# Use mv to rename
+cd backups/foo
+mv barney example2
+
+# Remove
+# rm [options] <file>
+rm example1
+cd ../..
+rm -ri linuxtutorialwork
+
