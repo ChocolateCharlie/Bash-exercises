@@ -50,7 +50,7 @@ L'option -d permet de décompresser un fichier, comme **gunzip**.
 
 **zcat** fonctionne aussi.
 
-### bizip2 (.bz2)
+### bzip2 (.bz2)
 Cette commande utilise l'algorithme de compression de texte par tri de blocs de Burrows-Wheeler et le codage de Huffman. Les taux de compression obtenus sont meilleurs qu'avec les commandes précédentes.
 
 La syntaxe de **bzip2** et **bunzip2** est similaire.
