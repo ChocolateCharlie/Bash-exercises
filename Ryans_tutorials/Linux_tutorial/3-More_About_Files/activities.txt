@@ -1,0 +1,13 @@
+#! usr/bin/env bash
+
+# Run the command file
+echo "What is the type of root ?"
+file /
+echo "What is the type of the current directory ?"
+file .
+echo "What is the type of examples.txt ?"
+file examples.txt
+
+# List the contents of the home directory, including hidden files
+ls -la ~
+

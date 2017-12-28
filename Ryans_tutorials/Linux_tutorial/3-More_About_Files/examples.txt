@@ -1,0 +1,16 @@
+#! usr/bin/env bash
+
+# Show the type of a file
+# file [path]
+file ../2-Basic_Navigation/activities.txt
+
+# Deal with spaces in name
+mkdir 'Holiday Photos'
+cd Holiday\ Photos
+pwd
+
+# Create a hidden file
+touch .hidden
+ls
+ls -a
+
