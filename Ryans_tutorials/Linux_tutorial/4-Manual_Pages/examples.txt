@@ -1,0 +1,8 @@
+#! usr/bin/env bash
+
+# man <command to look up>
+man ls
+
+# man -k <search term>
+# In a particular manual page, usr /<term> and press n to cycle through the results.
+
