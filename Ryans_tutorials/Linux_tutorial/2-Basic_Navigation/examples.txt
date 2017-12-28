@@ -1,0 +1,15 @@
+#! usr/bin/env bash
+
+# Print Working Directory
+pwd
+
+# List
+# ls [options] [location]
+ls
+
+# Change directory
+# cd [location]
+# NB : without any arguments, go to home directory
+cd ../1-The_Command_Line
+pwd
+

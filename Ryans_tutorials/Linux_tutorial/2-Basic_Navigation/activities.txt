@@ -1,0 +1,22 @@
+#! usr/bin/env bash
+
+# /etc stores config files for the system
+cd /etc
+ls
+
+# /var/log stores files for various system programs
+cd ../var/log
+ls -l
+
+# /bin is the location of several commonly used programs
+cd /bin
+ls
+
+# /usr/bin is another location for programs on the system
+cd ../usr/bin
+ls -l
+
+# Go to the home directory
+cd
+pwd
+
