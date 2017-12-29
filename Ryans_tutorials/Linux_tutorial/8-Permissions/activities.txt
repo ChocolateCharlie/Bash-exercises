@@ -1,0 +1,28 @@
+#! usr/bin/env bash
+
+# Set a playground
+mkdir linuxtutorialwork
+cd linuxtutorialwork
+touch foo bar file1 file2 example example2
+cd ..
+
+# Take a look at permission
+ls -ld linuxtutorialwork
+ls -l linuxtutorialwork
+
+# Change the permissions of some files
+cd linuxtutorialwork
+chmod a+rx e*
+chmod go-w *[0-9]*
+chmod 700 bar
+chmod 750 foo
+ls -l
+
+# Change the permissions of the directory
+cd ..
+chmod 404 linuxtutorialwork
+ls -ld linuxtutorialwork
+cd linuxtutorialwork
+chmod 544 linuxtutorialwork
+ls -ld linuxtutorialwork
+

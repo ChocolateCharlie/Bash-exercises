@@ -1,0 +1,34 @@
+#! usr/bin/env bash
+
+# View permissions for a file (long listing)
+# ls -l [path]
+# First character : - means file, d means directory
+# Permissions of owner, group, and others
+ls -l examples.txt
+
+# Change file mode bits
+# chmod [permissions] [path]
+# [ugoa] user (owner), group, other, all
+# + or -
+# r, w or x
+chmod u+rwx examples.txt
+chmod go-rwx examples.txt
+ls -l examples.txt
+
+# Shorthand setting permissions
+chmod 750 examples.txt
+ls -l examples.txt
+
+# Permissions for Directories
+mkdir testdir
+touch testdir/file1 testdir/file2 testdir/file3
+ls testdir
+chmod 400 testdir
+ls -ld testdir
+cd testdir
+chmod 100 testdir
+ls -ld testdir
+cd testdir
+cd ..
+ls testdir
+
