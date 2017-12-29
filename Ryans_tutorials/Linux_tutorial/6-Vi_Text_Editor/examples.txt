@@ -1,0 +1,44 @@
+#! usr/bin/env bash
+
+# vi <file>
+
+# ZZ	save and exit
+# :q!	discart all changes since the last save and exit
+# :w	save but don't exit
+# :wq	save and exit
+
+# j	down
+# k	up
+# h	left
+# l	right
+# ^	beginning of current line
+# $	end of current line
+# nG	move to nth line
+# G	move to the last line
+# w	move to the beginning of the next word
+# nw	move foward n words
+# b	move to the beginning of the previous word
+# nb	move back n words
+# {	move backwards one paragraph
+# }	move foward one paragraph
+
+# :set nu	enable line numbers
+
+# x	delete a single character
+# nx	delete n characters
+# dd	delete the current line
+# dn	delete to where the movement comand would have taken
+
+# u	undo the last action
+# U	undo all changes to the current line
+
+# Concatenate
+# cat <file>
+cat firstfile
+
+# less <file>
+# SpaceBar	go foward page
+# b		go back a page
+# q		quit
+less firstfile
+

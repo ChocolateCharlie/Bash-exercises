@@ -1,0 +1,15 @@
+#! usr/bin/env	bash
+
+# Create a file and put some content into it
+# Save the file
+vi activityfile
+
+# View the file
+cat activityfile
+less activityfile
+
+# Go back to the file and enter some more content
+# Move around the content
+# Play with delete and undo commands
+vi activityfile
+
