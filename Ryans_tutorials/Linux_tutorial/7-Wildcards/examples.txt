@@ -1,0 +1,38 @@
+#! usr/bin/env bash
+
+mkdir playground
+cd playground
+touch example.txt something.txt academic3.boo values ec5ample.jpeg
+
+echo "----- EXAMPLES -----"
+
+echo "Entries beginning with and e :"
+ls e*
+
+echo "Files with an exension of txt at the end :"
+ls *txt
+
+echo "Files which second letter is c :"
+ls ?c*
+
+echo "Files with a 3-letters extension :"
+ls *.???
+
+echo "Files whose name begin with a s or v :"
+ls [sv]*
+
+echo "Files whose name includes a digit in it :"
+ls *[0-9]*
+
+echo "Files wich do not start by a letter in the range of a to k :"
+ls [^a-k]*
+
+echo "----- REAL WORLD EXAMPLES -----"
+
+echo "Find the type of every file in a directory :"
+file ../*
+
+mkdir text
+echo "Move all files with of type txt into another directory :"
+mv *.txt text
+

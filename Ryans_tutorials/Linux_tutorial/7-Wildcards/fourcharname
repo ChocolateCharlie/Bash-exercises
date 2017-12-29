@@ -1,0 +1,30 @@
+-rw-r--r-- 1 root root    0 17 oct.  07:32 /etc/motd
+lrwxrwxrwx 1 root root   19 17 oct.  07:32 /etc/mtab -> ../proc/self/mounts
+
+/etc/dkms:
+total 12
+drwxr-xr-x  2 root root 4096 22 déc.  16:48 .
+drwxr-xr-x 52 root root 4096 29 déc.  17:21 ..
+-rw-r--r--  1 root root  914 10 déc.  10:48 framework.conf
+
+/etc/gimp:
+total 12
+drwxr-xr-x  3 root root 4096 10 août  17:54 .
+drwxr-xr-x 52 root root 4096 29 déc.  17:21 ..
+drwxr-xr-x  2 root root 4096 10 août  17:54 2.0
+
+/etc/skel:
+total 20
+drwxr-xr-x  2 root root 4096 10 août  20:31 .
+drwxr-xr-x 52 root root 4096 29 déc.  17:21 ..
+-rw-r--r--  1 root root   21 14 févr.  2017 .bash_logout
+-rw-r--r--  1 root root   57 14 févr.  2017 .bash_profile
+-rw-r--r--  1 root root  141 14 févr.  2017 .bashrc
+
+/etc/udev:
+total 20
+drwxr-xr-x  4 root root 4096 22 déc.  16:48 .
+drwxr-xr-x 52 root root 4096 29 déc.  17:21 ..
+drwxr-xr-x  2 root root 4096  1 août  20:15 hwdb.d
+drwxr-xr-x  2 root root 4096  1 août  20:15 rules.d
+-rw-r--r--  1 root root   49 18 déc.  13:57 udev.conf

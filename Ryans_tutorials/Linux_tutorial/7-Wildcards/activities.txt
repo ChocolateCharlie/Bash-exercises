@@ -1,0 +1,20 @@
+#! usr/bin/env bash
+
+touch listconfig fourcharname
+
+echo "List all files :"
+ls -la /etc
+
+echo "List all files that have an extension starting with c."
+echo "The point is to find all cfg and config files, so lets exclude .cache files."
+ls -la /etc/*.c[^a]* > listconfig
+
+echo "List only files that contain an extension :"
+ls -la /etc/*.*
+
+echo "List only 3-letters extension files :"
+ls -la /etc/*.???
+
+echo "List files whose name is 4 characters long :"
+ls -la /etc/???? > fourcharname
+

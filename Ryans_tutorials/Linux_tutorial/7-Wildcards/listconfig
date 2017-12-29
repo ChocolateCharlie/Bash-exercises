@@ -1,0 +1,33 @@
+-rw-r--r-- 1 root root  1191  7 nov.   2016 /etc/dhcpcd.conf
+-rw-r--r-- 1 root root  2584 28 nov.  11:32 /etc/gai.conf
+-rw-r--r-- 1 root root   450 28 oct.   2016 /etc/healthd.conf
+-rw-r--r-- 1 root root    73 17 oct.  07:32 /etc/host.conf
+-rw-r--r-- 1 root root   369  5 déc.  17:36 /etc/krb5.conf
+-rw-r--r-- 1 root root   117 17 oct.  07:32 /etc/ld.so.conf
+-rw-r--r-- 1 root root    17  7 août  19:00 /etc/locale.conf
+-rw-r--r-- 1 root root   686  9 déc.  12:23 /etc/logrotate.conf
+-rw-r--r-- 1 root root  5922  4 juil. 09:29 /etc/makepkg.conf
+-rw-r--r-- 1 root root  5134 15 déc.   2016 /etc/man_db.conf
+-rw-r--r-- 1 root root  2349  9 mars   2017 /etc/mdadm.conf
+-rw-r--r-- 1 root root   808 18 oct.  18:14 /etc/mke2fs.conf
+-rw-r--r-- 1 root root  2490  6 oct.  19:27 /etc/mkinitcpio.conf
+-rw-r--r-- 1 root root  2387 28 nov.  11:32 /etc/nscd.conf
+-rw-r--r-- 1 root root   334 17 oct.  07:32 /etc/nsswitch.conf
+-rw-r--r-- 1 root root  2996  7 août  19:14 /etc/pacman.conf
+-rw-r--r-- 1 root root  6213 11 mai    2017 /etc/rc_maps.cfg
+-rw-r--r-- 1 root root  1814 16 mars   2017 /etc/request-key.conf
+-rw-r--r-- 1 root root   155  8 août  18:14 /etc/resolv.conf
+-rw-r--r-- 1 root root   254  4 mars   2017 /etc/resolvconf.conf
+-rw-r--r-- 1 root root    65 17 oct.  07:32 /etc/resolv.conf.pacnew
+-rw-r--r-- 1 root root 10215 28 oct.   2016 /etc/sensors3.conf
+-rw-r--r-- 1 root root  2831 26 nov.  08:49 /etc/slim.conf
+-rw-r--r-- 1 root root   405 26 nov.  08:49 /etc/slimlock.conf
+-rw-r--r-- 1 root root    10  7 août  19:01 /etc/vconsole.conf
+-rw-r--r-- 1 root root    51 11 nov.  22:50 /etc/vdpau_wrapper.cfg
+
+/etc/ld.so.conf.d:
+total 16
+drwxr-xr-x  2 root root 4096 22 déc.  16:48 .
+drwxr-xr-x 52 root root 4096 29 déc.  17:21 ..
+-rw-r--r--  1 root root   30  8 déc.  10:13 50-ffmpeg2.8.conf
+-rw-r--r--  1 root root   21 18 août  06:16 fakeroot.conf
