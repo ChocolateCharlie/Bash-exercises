@@ -1,0 +1,68 @@
+#! usr/bin/env bash
+
+# Print 10 first lines of the input
+# head [-number of lines to print] [path]
+echo "---> 10 first lines :"
+head mysampledata.txt
+echo "---> 4 first lines :"
+head -4 mysampledata.txt
+
+# Print 10 last lines of the input
+# tail [-number of lines to print] [path]
+echo "---> 10 last lines :"
+tail mysampledata.txt
+echo "---> 4 last lines :"
+tail -4 mysampledata.txt
+
+# Sort alphabetically the input
+# sort [-options] [path]
+sort mysampledata.txt
+
+# Number Lines
+# nl [-options] [path]
+# -s	specifies what should be printed after the number
+# -w	specifies the padding before the number
+echo "---> Unformated number lines :"
+nl mysampledata.txt
+echo "---> Formated number lines :"
+nl -s ') ' -w 4 mysampledata.txt
+
+# Word Count
+# wc [-options] [path]
+echo "---> Count lines, words and characters :"
+wc mysampledata.txt
+echo "---> Count lines :"
+wc -l mysampledata.txt
+echo "---> Count words :"
+wc -w mysampledata.txt
+echo "---> Count characters :"
+wc -m mysampledata.txt
+echo "---> Count lines and words :"
+wc -lw mysampledata.txt
+
+# Get certain fields (columns)
+# cut [-options] [path]
+# -d	specifies the separator, defaults is [TAB]
+# -f	wanted field(s)
+echo "--> Print first two fields :"
+cut -f 1,2 -d ' ' mysampledata.txt
+
+# Stream Editor
+# sed <expression> [path]
+# A basic expression is of the following format :
+#	s/search/replace/g
+# s	substitute : action to perform
+# g	gloabl : eavery instance, if omited first instance on each line
+echo "---> Turn oranges into bananas !"
+sed 's/oranges/bananas/g' mysampledata.txt
+
+# Unique -- remove adjacent duplicate lines
+# uniq [options] [path]
+echo "---> Unique applied on buggy file :"
+uniq buggyfile.txt
+
+# Print data from the last to the first line
+# tac [path]
+echo "--> Print upsidedown the file :"
+tac mysampledata.txt
+
