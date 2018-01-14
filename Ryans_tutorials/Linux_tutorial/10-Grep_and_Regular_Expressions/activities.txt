@@ -1,0 +1,11 @@
+#! usr/bin/env bash
+
+echo "---> Identify lines not ending with a 2 :"
+egrep -v '2$' mysampledata.txt
+
+echo "---> Identify lines containing the string 'apples' :"
+egrep 'apples' mysampledata.txt
+
+echo "---> Identify line containing 'apples' as a word :"
+egrep -w 'apples' mysampledata.txt
+

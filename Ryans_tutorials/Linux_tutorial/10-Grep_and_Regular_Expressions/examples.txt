@@ -1,0 +1,43 @@
+#! usr/bin/env bash
+
+# egrep [command line options] <pattern> [path]
+
+echo "---> Identify every line which contains the strig 'mellon' :"
+egrep 'mellon' mysampledata.txt
+
+echo "---> Do the same thing showing line numbers :"
+egrep -n 'mellon' mysampledata.txt
+
+echo "---> Print how many lines did match :"
+egrep -c 'mellon' mysampledata.txt
+
+# Regular Expression Overview : basic building blocks
+#	.	a single character
+#	?	the preceding character matches 0 or 1 times only
+#	*	the preceding character matches 0 or more times
+#	+	the preceding character matches 1 or more times
+#	{n}	the preceding character matches exactly n times
+#	{n,m}	the preceding character matches at least n times and not more than m times
+#	[agd]	the character is one of those included within the square brackets
+#	[^agd]	the character is not one of those included within the square brackets
+#	[c-f]	the character is in the given range, c and f included
+#	()	group several characters to behave as one
+#	|	logical OR operation
+#	^	matches the beginning of the line
+#	$	matches the end of the line
+
+echo "---> Identify any line with two or more vowels in a row :"
+egrep '[aeiouy]{2,}' mysampledata.txt
+
+echo "---> Identify any line with a 2 on it which is not the end of the line :"
+egrep '2.+' mysampledata.txt
+
+echo "---> Identify each line with a 2 as the last character on the line :"
+egrep '2$' mysampledata.txt
+
+echo "---> Identify each line which contains either 'is', 'go' or 'or' :"
+egrep 'is|go|or' mysampledata.txt
+
+echo "---> Print orders for everyone who's name begins with A-K :"
+egrep '^[A-K]' mysampledata.txt
+
