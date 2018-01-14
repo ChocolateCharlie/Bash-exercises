@@ -1,0 +1,25 @@
+#! usr/bin/env bash
+
+# Save output (STDOUT) in a file
+ls > myoutput
+
+# Append some new data to the file
+wc -l foo.txt >> myoutput
+
+# Read data from the file and feed it to the program via STDIN
+wc -l < myoutput
+
+# Combine the two forms of redirection in a single command
+wc -l < foo.txt >> myoutput
+
+# Save error output (STDERR) in a file
+ls bar.txt 2> errors.txt
+
+# Save STDOUT and STDERR in the same file
+ls . bar.txt > anotheroutput 2>&1
+
+# Feed the output from ls as input to head
+# Then feed the output from head as input to tail
+# Then save the output in a file
+ls | head -3 | tail -1 > pipesoutput
+

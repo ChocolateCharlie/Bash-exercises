@@ -1,0 +1,1 @@
+ls: impossible d'accéder à 'bar.txt': Aucun fichier ou dossier de ce type
